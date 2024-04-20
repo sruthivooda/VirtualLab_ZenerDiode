@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenerDiode</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+</head>
+<body>   
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/zener.png" alt="logo" width="40" height="40">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aim.html">Theory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="procedure.html">Procedure</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Additional
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="advantages.html">Advantages</a></li>
+                        <li><a class="dropdown-item" href="applications.html">Applications</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="apparatus.html">Apparatus</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Simulation</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <h1 class="heading">ZENER DIODE</h1>
+    <table>
+        <tr>
+            <td>
+                <div class="container-fluid">
+                <canvas id="myCanvas" width="800px" height="600px" style="border:3px solid grey;"></canvas>
+                <img id="circuit" src="images/forwardcirc.png" alt="circuit" style="display: none;">
+                </div>
+            </td>
+            <td>
+                <div class="graph">
+                    <h3>Graph</h3>
+                    <img src="images/forwbias.jpg" alt="Graphs" id="graph">
+                </div>
+            </td>
+        </tr>
+    </table>
+    <button class="inpbutton" onclick="changegraphvi()">Forward Bias</button>
+    <button class="inpbutton" onclick="changegraphli()">Reverse Bias</button>
+    <br>
+    <br>
+    <br>
+    <div id="footer">
+        <h5>© A Project by T.Srikar, V.Sruthi, G.Jashwanth, B.Rohith,Ch.Ajay Kumar</h5>
+    </div>
+    
+
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    window.onload = function(){
+    const img = document.getElementById("circuit");
+    ctx.drawImage(img,50,10,600,500);
+    }
+    function changegraphli(){
+        document.getElementById("graph").src = "images/VIgraph.png";
+        document.getElementById("circuit").src = "images/reversecirc.png";
+        const img = document.getElementById("circuit");
+        ctx.drawImage(img,50,10,600,500);
+    }
+    function changegraphvi(){
+        document.getElementById("graph").src = "images/forwbias.jpg";
+        document.getElementById("circuit").src = "images/forwardcirc.png";
+        const img = document.getElementById("circuit");
+        ctx.drawImage(img,50,10,600,500);
+    }
+</script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+</html>

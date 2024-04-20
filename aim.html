@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenerDiode-Aim</title>
+    <link rel="stylesheet" href="aim.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/zener.png" alt="led" width="40" height="40">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aim.html">Theory</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="procedure.html">Procedure</a>
+                    </li> 
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Additional
+                    </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="advantages.html">Advantages</a></li>
+                        <li><a class="dropdown-item" href="applications.html">Applications</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="apparatus.html">Apparatus</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Simulation</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 col-xs-12">
+                <h1 class="heading col-lg-12 col-md-12 col-xl-12 col-sm-12 col-xs-12">ZENER DIODE</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 col-xs-12">
+                <br>
+                <br>
+                <div class="ParaOne col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+                        <h2 class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+                            INTRODUCTION
+                        </h2>
+                    </div>
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+                         
+                        <ol>
+                            <li>
+                                <p>A Zener diode is a reverse biased p-n junction diode.</p>
+                            </li>
+                            <li><p>Zener diodes are the basic building blocks of electronic circuits.</p></li>
+                            <li><p>They are widely used in electronic equipments.</p></li>
+                            <li><p>They protect electronic circuits from over (or) excess voltage</p></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 col-xs-12">
+                    <br>
+                    <br>
+                    <div class="ParaOne col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+                            <h2 class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+                                SYMBOL
+                            </h2>
+                            <img class="symbol" src="images/zener_diode_symbol.png" alt="zener symbol" style="width: 500px; ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12">
+                    <div class="ParaOne col-lg-12 col-md-12 col-xl-12 col-sm-12">
+                        <h2>
+                            V-I Characteristics
+                        </h2>
+                        <p>When Forward biased voltage is applied to zener diode it works like a normal p-n junction diode.</p>
+                        <img class="model-graph" src="images/VIgraph.png" alt="model-graph" style="width: 500px; height:400px;">
+                        <p>When reverse biased voltage is applied to a zener diode ,it allows only a small amount of leakage current 
+                            until the voltage is less than zener voltage.When applied voltage to the zener diode reaches the zener voltage,it starts allowing diode 
+                            reaches the zener voltage, it starts allowing large amount of electric current.At this point
+                            a small increase in reverse voltage will rapidly increase in reverse voltage will rapidly increase the electric current
+                            called zener current.
+                        </p>
+                        <p>
+                            Because of this sudden rise in electric current,breakdown occurs which is called as zener breakdown.
+                            The zener breakdown voltage dependent on the amount of doping.If the diode is heavily doped,zener breakdown occurs at low
+                            reverse voltages.If it is lightly doped,the zener breakdown occurs at high reverse voltages.
+                        </p>
+                                                
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xl-12 align-self-center">
+                    <div class="PicOne col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12 align-self-center">
+                        <h2 id="#Head2 col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">Circuit Connection</h2>
+                        <img class="TotalPic col-lg-10 col-md-8 col-xs-12 col-sm-8 col-xl-10 align-self-center" src="images/circuit.png" alt="" >
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
