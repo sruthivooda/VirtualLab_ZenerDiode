@@ -27,5 +27,5 @@ Features
 
 ## Link
 
- - [VirtualLab_ZenerDiode](https://virtuallab-led.onrender.com)
+ - [VirtualLab_ZenerDiode](https://virtuallab-zenerdiode.onrender.com)
 
